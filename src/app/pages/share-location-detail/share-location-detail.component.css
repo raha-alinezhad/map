@@ -1,0 +1,188 @@
+.map {
+    width: 50%;
+    height: 140px;
+    position: relative;
+    border: 1px solid;
+}
+
+.icon-upload {
+    color: rgb(91, 139, 215);
+    background-color: rgb(154 196 214);
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+
+.upload-bg {
+    border: 1px solid rgb(91, 139, 215);
+    border-radius: 2px;
+    padding-bottom: 14px;
+    width: 167px;
+}
+
+.label {
+    color: #fff;
+    background-color: rgb(91, 139, 215);
+    width: 100%;
+    justify-content: center;
+}
+
+.save-btn {
+    width: 70px;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(96, 158, 245);
+    border: 1px solid rgb(96, 158, 245);
+    border-radius: 8px;
+}
+
+.d-none {
+    display: none;
+}
+
+.up-icon {
+    width: 100%;
+    height: 47px;
+    position: relative;
+}
+
+.input-file {
+    height: 61px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    width: 70px;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(113, 115, 118);
+    border: 1px solid rgb(113, 115, 118);
+    border-radius: 8px;
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.end {
+    justify-content: end;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.form-detail {
+    border: 1px solid rgb(91, 139, 215);
+    border-radius: 7px;
+    width: 60%;
+}
+
+.title {
+    border-bottom: 1px solid rgb(91, 139, 215);
+    color: #fff;
+    background-color: rgb(91, 139, 215);
+    padding: 8px;
+    border: 1px solid rgb(91, 139, 215);
+    border-radius: 5px 5px 0 0;
+
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+::ng-deep.leaflet-control-attribution {
+    display: none !important;
+}
+
+::ng-deep.leaflet-control-zoom {
+    display: none !important;
+}
+
+.p-5 {
+    padding: 5px 2px;
+}
+
+select {
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.25em;
+    width: 168px;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select.classic {
+    background-image:
+        linear-gradient(45deg, transparent 50%, blue 50%),
+        linear-gradient(135deg, blue 50%, transparent 50%),
+        linear-gradient(to right, skyblue, skyblue);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+
+select.classic:focus {
+    background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        linear-gradient(to right, gray, gray);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+}

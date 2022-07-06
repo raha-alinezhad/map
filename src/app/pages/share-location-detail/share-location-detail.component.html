@@ -1,0 +1,41 @@
+<div class="container d-flex">
+    <form [formGroup]="form" class="d-flex form column" (ngSubmit)="onSubmit()">
+        <div class="d-flex column form-detail">
+            <strong class="title">Share location</strong>
+            <div class="d-flex column p-20">
+                <div class="row d-flex">
+                    <label class="d-flex start">
+                        Location name:
+                    </label>
+                    <input class="d-flex end p-5" formControlName="name" type="text">
+                </div>
+                <div class="row d-flex">
+                    <label class="d-flex start">Location on map:</label>
+                    <div id="ex_map" #ex_map class="map d-flex end"></div>
+                </div>
+                <div class="row d-flex">
+                    <label class="d-flex start">Lacation type:</label>
+                    <select formControlName="type" class="form-select d-flex end classic"
+                        aria-label="Default select example">
+                        <option value="busines">Busines</option>
+                        <option value="home">Home</option>
+                    </select>
+                </div>
+                <div class="row d-flex">
+                    <label class="d-flex start">Logo:</label>
+                    <div class="d-flex column end upload-bg">
+                        <label class="d-flex label">Upload</label>
+                        <div class="d-flex up-icon">
+                            <input #file type="file" class="input-file" (change)="onFileChange($event)">
+                            <i class="fa fa-upload icon-upload" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <button class="save-btn" type="submit">Save</button>
+            <button class="cancel-btn">Cancel</button>
+        </div>
+    </form>
+</div>
